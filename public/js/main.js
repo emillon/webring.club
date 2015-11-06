@@ -9,6 +9,7 @@ $(document).ready(function() {
       $.post("/signup", $(this).serialize(), function() {
         $("#notices #success").show();
         $("form input#email").val("");
+        ga("send", { 'hitType': 'event', 'eventCategory': 'newsletter', 'eventAction': 'signup'})
       })
       .error(function() {
         $("#notices #error").show();
