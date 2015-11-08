@@ -1,0 +1,13 @@
+sudo: false
+language: ruby
+cache: bundler
+rvm:
+- 2.1.5
+deploy:
+  provider: heroku
+  api_key:
+    secure: c/dtWkEFPo4aYz/tRLEK5CI79u4KHUMf0RwO+KjR66PA1lruUoiHeIwkm8vGvHyuNpVg38w3tG10OtrUEM6EPaTVSk7695BwaaeJ1qkDek+TbOjhnnT8jp41GWzBtDmiwOykYr3R5nL8dolw2G0VPHTfpemeRoKyY2IFRdf8IRDNwCdiZy5C8rQJLmxSC6iKnpf+o+oVPTkOr4giJsH+RBka5htMJ9P1c19A49wOODFzhDKoy7ncCuukUqj111XR9PAz3Jq+FcGxsdOBoRszGrkXZL1bZ9d1c1amf5waMgtay779IkjsTFOgHGfwUWTkVhVN5FqUGEuud17FllXbA4gOf+d6tzUnCtf1XT/xSg7Yt+NRad2qKCzRNCA0mV+M5M7DBpBAW5mENWwMxGN2Ut2yoM5NkiF1wIbw2PxH6KtJUWnszJRpV33gQ+MLW233k4eur5DHP9Oprpvnab1xK+pZpD5jTs0cJ7A8qoHtf4hGuEs7I7ghoQKYhOhxg29zAHzlWUKam1XXw/f8l7KaGX1bIIq7ZA+uDBFfy+xZXPOX/DUOj2jiu0Os0D+oI47g1z8ZLMUS7BgKSplH5jQIoBmjzHvr5W/cH3WGlwikHt+f5qfttdUuv7FN+RfXWfz9sQNomcV63MMb7rcNJ6yrgCS0vWr9aZRkOj3WeUkOTlY=
+  app: webringclub
+  on:
+    repo: emillon/webring.club
+    branch: master
