@@ -47,6 +47,7 @@ group :development do
 end
 
 group :production do
+  gem 'pg',             '~> 0.18.0'
   gem "rack-tracker", "~> 1.0.2"
   gem 'rails_12factor', '~> 0.0.3'
   gem 'unicorn',        '~> 4.8.3'
