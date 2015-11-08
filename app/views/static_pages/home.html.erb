@@ -1,0 +1,57 @@
+<div class="feature">
+  <h1>Join the webring.club</h1>
+
+  <h2>Webrings for 2015</h2>
+
+  <div class="description">
+
+    <p>
+    A webring is a set of websites that is connected as a ring.
+    Every site in the ring links to the next and the previous ones.
+    </p>
+
+    <p>
+    On webring.club you can create and join webrings.
+    It will generate a badge that you can put on your website.
+    </p>
+
+    <p>
+    Here are some example of communities that can be linked as a webring:
+    </p>
+
+    <ul>
+      <li>your friends from high school</li>
+      <li>sci-fi enthusiasts</li>
+      <li>people named Adam</li>
+    </ul>
+
+    <p>Keep following the links and... who knows what you'll discover?</p>
+
+    <div id="notices">
+      <div id="success" style="display: none;">Success! Please check your inbox for a confirmation request.</div>
+      <div id="error" style="display: none;">Sorry, MailChimp couldn't validate your email. Try again?</div>
+    </div>
+    <form action="/signup" class="form-inline">
+      <input id="email" name="email"  type="text" class="input-xlarge" placeholder="Enter your email to join the webring.club!">
+      <button type="submit" class="btn btn-success">Subscribe</button>
+    </form>
+
+    <ul class="social-list-small">
+      <li>
+        <g:plusone size="medium" href="<%= request.url %>"></g:plusone>
+      </li>
+      <li>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-url="<%= request.url %>" data-text="I just signed up for this:">Tweet</a>
+      </li>
+      <li>
+        <div class="fb-like" data-href="<%= request.url %>" data-send="false" data-layout="button_count" data-width="90" data-show-faces="false" data-font="arial"></div>
+      </li>
+    </ul>
+
+    <p class="signup-terms">
+      You will receive only relevant, occasional messages, and your email
+      will be stored only by MailChimp, ensuring prompt removal should you
+      choose to unsubscribe.
+    </p>
+  </div>
+</div>

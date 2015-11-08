@@ -1,10 +1,4 @@
-require 'rubygems'
-require 'bundler/setup'
+# This file is used by Rack-based servers to start the application.
 
-require 'rack/tracker'
-use Rack::Tracker do
-  handler :google_analytics, { tracker: ENV['GA_CODE'] }
-end
-
-require './app'
-run Sinatra::Application
+require ::File.expand_path('../config/environment', __FILE__)
+run Rails.application
