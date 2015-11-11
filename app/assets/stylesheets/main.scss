@@ -114,31 +114,29 @@ form {
 }
 
 .bottom-nav {
-  margin-top: 16px;
-  font-size: 16px;
+    margin-top: 16px;
+    font-size: 16px;
+
+    ul li a {
+        margin-right: 22px;
+    }
 }
 
 a {
-      color: #444;
+    color: #444;
     font-family: "agb", Helvetica Neue, Helvetica, Arial, sans-serif;
     font-weight: normal;
     text-decoration: none;
 
+    &:hover {
+          color: #000;
+    }
 }
-
-a:hover {
-      color: #000;
-}
-
 
 @media (max-width: 767px) {
     button {
         margin-top: 10px;
     }
-}
-
-.bottom-nav ul li a {
-    margin-right: 22px;
 }
 
 .social-list-small {
