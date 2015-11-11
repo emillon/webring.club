@@ -1,5 +1,15 @@
+$bg-color: #f4f4f4;
+$text-color: #52585D;
+$h1-color: #222;
+$h1-shadow-color: #aaaaaa;
+$h2-color: #42484D;
+$success-color: #40449B;
+$error-color: #E52228;
+$terms-color: #7a7a7a;
+$link-color: #444;
+
 body, html {
-  background-color: #f4f4f4;
+  background-color: $bg-color;
 }
 
 /* Sticky footer styles
@@ -44,7 +54,7 @@ body {
 -------------------------------------------------- */
 
 body {
-  color: #52585D;
+  color: $text-color;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   text-align: center;
   font-size: 12px;
@@ -68,15 +78,15 @@ body {
 
 
 h1 {
-  color: #222;
+  color: $h1-color;
   font-family: "agb", Helvetica Neue, Helvetica, Arial, sans-serif;
-  text-shadow: #aaaaaa 1px 1px 1px;
+  text-shadow: $h1-shadow-color 1px 1px 1px;
   font-weight: normal;
   font-size: 32px;
 }
 
 h2 {
-  color: #42484D;
+  color: $h2-color;
   font-weight: normal;
   font-size: 16px;
 }
@@ -92,11 +102,11 @@ h2 {
 }
 
 #success {
-  color: #40449B;
+  color: $success-color;
 }
 
 #error {
-  color: #E52228;
+  color: $error-color;
 }
 
 form {
@@ -107,7 +117,7 @@ form {
 .signup-terms {
   font-size: 11px;
   line-height: 15px;
-  color: #7a7a7a;
+  color: $terms-color;
   font-style: italic;
   max-width: 400px;
   margin: 0 auto;
@@ -123,13 +133,13 @@ form {
 }
 
 a {
-    color: #444;
+    color: $link-color;
     font-family: "agb", Helvetica Neue, Helvetica, Arial, sans-serif;
     font-weight: normal;
     text-decoration: none;
 
     &:hover {
-          color: #000;
+          color: black;
     }
 }
 
