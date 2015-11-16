@@ -1,24 +1,62 @@
-$bg-color: #f4f4f4;
-$text-color: #52585D;
-$h1-color: #222;
-$h2-color: darken($text-color, 10%);
 $success-color: #40449B;
 $error-color: #E52228;
-$terms-color: lighten($text-color, 15%);
-$link-color: darken($text-color, 30%);
-$light-bg-color: lighten($bg-color, 40%);
 
-body, html {
-  background-color: $bg-color;
+@mixin color-theme($bg-color, $text-color, $h1-color) {
+    $h2-color: darken($text-color, 10%);
+    $terms-color: lighten($text-color, 15%);
+    $link-color: darken($text-color, 30%);
+    $light-bg-color: lighten($bg-color, 40%);
+
+    body, html {
+        background-color: $bg-color;
+    }
+
+    #footer, ul.breadcrumb {
+        background-color: $light-bg-color;
+    }
+
+    body {
+        color: $text-color;
+    }
+
+    .feature {
+      background-color: $light-bg-color;
+    }
+
+    h1 {
+      color: $h1-color;
+      text-shadow: lighten($h1-color, 50%) 1px 1px 1px;
+    }
+
+    h2 {
+      color: $h2-color;
+    }
+
+    #success {
+      color: $success-color;
+    }
+
+    #error {
+      color: $error-color;
+    }
+
+    .signup-terms {
+      color: $terms-color;
+    }
+
+    a {
+        color: $link-color;
+    }
 }
 
-/* Sticky footer styles
--------------------------------------------------- */
+$default-bg-color: #f4f4f4;
+$default-text-color: #52585D;
+$default-h1-color: #222;
 
-html,
-body {
+@include color-theme($default-bg-color, $default-text-color, $default-h1-color);
+
+body, html {
     height: 100%;
-    /* The html and body elements cannot have any padding or margin. */
 }
 
 /* Wrapper for page content to push down footer */
@@ -36,11 +74,6 @@ body {
     height: 60px;
 }
 
-#footer, ul.breadcrumb {
-    background-color: $light-bg-color;
-
-}
-
 /* Lastly, apply responsive CSS fixes as necessary */
 @media (max-width: 767px) {
     #footer {
@@ -55,7 +88,6 @@ body {
 -------------------------------------------------- */
 
 body {
-  color: $text-color;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   text-align: center;
   font-size: 12px;
@@ -69,7 +101,6 @@ body {
 }
 
 .feature {
-  background-color: $light-bg-color;
   border-radius: 6px;
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
@@ -77,17 +108,13 @@ body {
   padding: 20px 50px;
 }
 
-
 h1 {
-  color: $h1-color;
   font-family: "agb", Helvetica Neue, Helvetica, Arial, sans-serif;
-  text-shadow: lighten($h1-color, 50%) 1px 1px 1px;
   font-weight: normal;
   font-size: 32px;
 }
 
 h2 {
-  color: $h2-color;
   font-weight: normal;
   font-size: 16px;
 }
@@ -102,14 +129,6 @@ h2 {
   margin-top: 20px;
 }
 
-#success {
-  color: $success-color;
-}
-
-#error {
-  color: $error-color;
-}
-
 form {
     text-align: center;
     margin-top: 10px;
@@ -118,7 +137,6 @@ form {
 .signup-terms {
   font-size: 11px;
   line-height: 15px;
-  color: $terms-color;
   font-style: italic;
   max-width: 400px;
   margin: 0 auto;
@@ -134,7 +152,6 @@ form {
 }
 
 a {
-    color: $link-color;
     font-weight: normal;
     text-decoration: none;
 
