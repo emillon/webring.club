@@ -54,7 +54,7 @@ GEM
     debug_inspector (0.0.3)
     erubis (2.7.0)
     execjs (2.7.0)
-    ffi (1.9.21)
+    ffi (1.9.23)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
     hominid (3.0.5)
