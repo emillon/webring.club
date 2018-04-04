@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.3.6'
+ruby '2.5.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 4.2.0'
@@ -24,6 +24,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # mailchimp
 gem "hominid", "~> 3.0.5"
+
+gem 'xmlrpc'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
